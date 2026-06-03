@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #050816;
+  color: #fff;
+  font-family: Inter, Segoe UI, sans-serif;
+}
+
+.jarvis-grid {
+  background-image:
+    linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.jarvis-panel {
+  border: 1px solid rgba(0, 245, 255, 0.35);
+  border-radius: 14px;
+  background: rgba(11, 17, 32, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.14);
+  padding: 1rem;
+}
+
+.jarvis-link {
+  display: inline-block;
+  border: 1px solid rgba(0, 245, 255, 0.25);
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  color: #bef9ff;
+  text-decoration: none;
+}
+
+.jarvis-button {
+  border: 1px solid rgba(0, 245, 255, 0.45);
+  background: linear-gradient(90deg, #00d2ff, #00f5ff);
+  color: #00161f;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  font-weight: 700;
+}
+
+.jarvis-input {
+  width: 100%;
+  border: 1px solid rgba(0, 245, 255, 0.35);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.65rem 0.7rem;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at top right, rgba(0, 245, 255, 0.2), transparent 45%),
+    radial-gradient(circle at left bottom, rgba(0, 161, 255, 0.15), transparent 45%),
+    #050816;
+  padding: 1rem;
+}
+
+.terminal-window {
+  min-height: 120px;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.voice-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #00f5ff, #00a8ff);
+  animation: voiceWave 1.2s ease-in-out infinite;
+}
+
+@keyframes voiceWave {
+  0%,
+  100% {
+    height: 12px;
+  }
+  50% {
+    height: 100%;
+  }
+}

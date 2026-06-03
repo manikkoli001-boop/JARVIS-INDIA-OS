@@ -1,0 +1,11 @@
+{
+  "socketEvents": [
+    "chat-message",
+    "ai-response",
+    "voice-command",
+    "terminal-command",
+    "dashboard-update",
+    "system-status"
+  ],
+  "apiNamespaces": ["/api/auth", "/api/ai", "/api/system"]
+}

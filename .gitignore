@@ -1,0 +1,8 @@
+.aider*
+venv/
+__pycache__/
+*.pyc
+.coverage
+coverage/
+*.pyo
+*.pyd

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "workflowStates": ["queued", "active", "done", "failed"],
+  "defaultWorkflow": [
+    "Analyze intent",
+    "Select tools",
+    "Execute actions",
+    "Persist output",
+    "Return response"
+  ]
+}

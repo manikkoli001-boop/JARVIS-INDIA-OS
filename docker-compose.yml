@@ -1,0 +1,17 @@
+services:
+  jarvis-backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - CORS_ORIGIN=*
+
+  jarvis-frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4173:80"
+    depends_on:
+      - jarvis-backend

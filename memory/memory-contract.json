@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "entities": [
+    { "name": "users", "fields": ["id", "name", "role"] },
+    { "name": "sessions", "fields": ["id", "userId", "createdAt", "status"] },
+    { "name": "conversations", "fields": ["id", "sessionId", "role", "content", "timestamp"] }
+  ],
+  "retrieval": {
+    "windowSize": 5,
+    "strategy": "recent-first"
+  }
+}

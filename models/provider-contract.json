@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "providers": [
+    {
+      "id": "local-sim",
+      "type": "inference",
+      "capabilities": ["chat", "planning", "tool-routing"],
+      "fallback": "cloud-fallback"
+    },
+    {
+      "id": "cloud-fallback",
+      "type": "inference",
+      "capabilities": ["chat", "long-context", "multimodal"]
+    }
+  ]
+}

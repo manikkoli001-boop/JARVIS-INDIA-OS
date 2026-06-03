@@ -1,0 +1,23 @@
+{
+  "name": "jarvis-india-os",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build:client": "npm --prefix client run build",
+    "lint:client": "npm --prefix client run lint",
+    "test:server": "npm --prefix server run test",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "test": "npm --prefix backend run test",
+    "quality": "npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19"
+  }
+}
